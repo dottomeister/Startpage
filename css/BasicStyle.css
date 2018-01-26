@@ -1,0 +1,108 @@
+
+/**
+ * 1 - Size & Positioning.
+ * 2 - Text style.
+ * 3 - Border & background style.
+ * 4 - Special effects.
+ */
+
+/* General tags.
+ ------------------------- */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	
+	position: relative;
+	
+	
+	font-family: 'Roboto Mono', monospace;
+}
+
+html, body
+{
+	width: 100% !important;
+	height: 100% !important;
+	
+	font-size: 16px !important;
+	font-family: 'Roboto Mono', monospace;
+	
+	background-size: cover;
+	background-color: #9F1749; /* PAGE BACKGROUND COLOR */
+	background: url("../resources/background.png") no-repeat fixed center;
+}
+
+a,
+a:hover,
+a:active,
+a:visited
+{
+	text-decoration: none !important;
+}
+
+.full-center
+{
+	left: -0.75%;
+	top: 35%;
+}
+
+.hidden
+{
+	display: none;
+}
+
+/* Settings.
+ ------------------------- */
+
+#settings-button
+{
+	width: 35px;
+	height: 35px;
+	
+	top: 2.5%;
+	left: 1.25%;
+	position: fixed;
+	
+	outline: none;
+}
+
+#settings-button .edit-disabled
+{
+	opacity: 0.25;
+	
+	-webkit-animation-name: none;
+}
+
+#settings-button .edit-enabled
+{
+	opacity: 1;
+	
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate
+{
+	from
+	{
+		-webkit-transform: rotate(0deg);
+	}
+	to
+	{ 
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+/* Clock.
+ ------------------------- */
+
+/* TODO */
+
+/* Dancing Jesus
+ ------------------------- */
+
+/* TODO */

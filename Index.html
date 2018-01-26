@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Startpage III</title>
+		
+		<!-- Favicon(s) -->
+		<link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon" />
+		
+		<!-- Meta tags -->
+		<meta name="description" content="A simple custom home page." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/BoxStyle.css" />
+		<link rel="stylesheet" href="./css/TextStyle.css" />
+		<link rel="stylesheet" href="./css/BasicStyle.css" />
+		<link rel="stylesheet" href="./css/DeviceStyle.css" />
+		<link rel="stylesheet" href="./css/SearchBarStyle.css" />
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+		
+	</head>
+	<body>
+		<div class="full-center container">
+			<div id="search-bar-container" class="box-shadow row">
+				<div id="search-bar-title" class="col-auto">
+					<span class="light-blue-text bold-text">$</span>
+					<span class="green-text bold-text">find</span>
+				</div> <!-- serach-bar-title -->
+				<div id="search-bar" class="col-10">
+					<input id="search-bar-query" type="text" autofocus="on" maxlength="72" autocomplete="on">
+				</div> <!-- search-bar-query -->
+			</div> <!-- search-bar-container -->
+			
+			<div id="box-container" class="row">
+				<div id="first-box" class="box box-shadow col-4">
+					<div class="box-title-container">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="green-text bold-text">grep</span>
+						<span class="red-text bold-text hidden">"</span>
+						<input class="box-title red-text bold-text" type="text" maxlength="15" placeholder="Box Title">
+						<span class="red-text bold-text hidden">"</span>
+					</div> <!-- box-title-container -->
+					<div class="box-link-container">
+						<ul>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+						</ul>
+					</div> <!-- box-link-container -->
+				</div> <!-- first-box -->
+				
+				<div id="first-buffer" class="box hidden col-4"></div>
+				
+				<div id="second-box" class="box box-shadow col-4">
+					<div class="box-title-container">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="green-text bold-text">grep</span>
+						<span class="red-text bold-text hidden">"</span>
+							<input class="box-title red-text bold-text" type="text" maxlength="15" placeholder="Box Title">
+						<span class="red-text bold-text hidden">"</span>
+					</div> <!-- box-title-container -->
+					<div class="box-link-container">
+						<ul>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+						</ul>
+					</div> <!-- box-link-container -->
+				</div> <!-- second-box -->
+				
+				<div id="second-buffer" class="box hidden col-4"></div>
+				
+				<div id="third-box" class="box box-shadow col-4">
+					<div class="box-title-container">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="green-text bold-text">grep</span>
+						<span class="red-text bold-text hidden">"</span>
+						<input class="box-title red-text bold-text" type="text" maxlength="15" placeholder="Box Title">
+						<span class="red-text bold-text hidden">"</span>
+					</div> <!-- box-title-container -->
+					<div class="box-link-container">
+						<ul>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+						</ul>
+					</div> <!-- box-link-container -->
+				</div> <!-- third-box -->
+			</div> <!-- box-container -->
+			<input id="settings-button" class="edit-disabled" type="image" src="./resources/gear-icon.png">
+		</div> <!-- full-center -->
+		
+		<!-- Javascript. Placed at the end so the page load faster. -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="./js/SettingsScript.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				Settings();
+			});
+		</script>
+	</body>
+</html>

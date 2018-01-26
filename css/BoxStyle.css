@@ -1,0 +1,88 @@
+
+/**
+ * 1 - Size & Positioning.
+ * 2 - Text style.
+ * 3 - Border & background style.
+ * 4 - Special effects.
+ */
+
+/* Box.
+ ------------------------- */
+
+#box-container {}
+
+.box
+{
+	margin: 5px;
+	max-width: 260px !important;
+	background-color: #282A36;
+}
+
+
+.box ul, .box li
+{
+	list-style: none;
+	line-height: 30px;
+}
+
+#first-box
+{
+	margin-left: 0px;
+}
+
+#second-box {}
+#third-box
+{
+	margin-right: 0px;
+}
+
+.box-title-container
+{
+	margin: 10px 0;
+}
+
+.box-title
+{
+	width: 150px;
+	
+	display: inline;
+	
+	border: none;
+	background: #282A36;
+}
+
+.box-title:focus
+{
+	outline: none;
+}
+
+.box-link-container
+{
+	margin: 20px 0;
+}
+
+.box-link-container a,
+.box-link-container a:hover,
+{
+	text-decoration: none;
+}
+
+/* Box settings.
+ ------------------------- */
+
+/* TODO */
+
+/* Box effects.
+ ------------------------- */
+
+.box-shadow
+{
+	box-shadow: 1px 1px 20px 0px #000;
+	-moz-box-shadow: 1px 1px 20px 0px #000;
+	-webkit-box-shadow: 1px 1px 20px 0px #000;
+}
+ 
+.box-blur
+{
+	-webkit-filter: blur(5px);
+}

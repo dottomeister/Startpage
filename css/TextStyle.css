@@ -1,0 +1,70 @@
+
+/**
+ * 1 - Size & Positioning.
+ * 2 - Text style.
+ * 3 - Border & background style.
+ * 4 - Special effects.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/* Text weight.
+ ------------------------- */
+
+.bold-text
+{
+	font-weight: bold;
+}
+
+/* Colours.
+ ------------------------- */
+
+.violet-text
+{
+	color: #800080;
+}
+
+.blue-text
+{
+	color: #0000FF;
+}
+
+.light-blue-text
+{
+	color: #57c7ff;
+}
+
+.green-text
+{
+	color: #00FF00;
+}
+
+.yellow-text
+{
+	color: #FFFF00;
+}
+
+.orange-text
+{
+	color: #FF7700;
+}
+
+.red-text
+{
+	color: #FF0000;
+}
+
+.white-text
+{
+	color: #FFFFFF;
+}
+
+.grey-text
+{
+	color: #777777;
+}
+
+.black-text
+{
+	color: #000000;
+}

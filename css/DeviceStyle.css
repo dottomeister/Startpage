@@ -1,0 +1,70 @@
+
+/**
+ * 1 - Size & Positioning.
+ * 2 - Text style.
+ * 3 - Border & background style.
+ * 4 - Special effects.
+ */
+
+@media only screen and (min-width: 1200px)
+{
+	.row, .container
+	{
+		min-width: 800px !important;
+		max-width: 800px !important;
+		
+		margin: 0 auto !important;
+	}
+}
+
+/*
+@media only screen and (max-width: 1200px)
+{
+	#box-container
+	{
+		width: 103%;
+	}
+	
+	#search-bar-container
+	{
+		max-width: 79.2%;
+	}
+	
+	#search-bar-query
+	{
+		left: 51%;
+	}
+}
+
+@media only screen and (max-width: 992px)
+{
+	#search-bar-container
+	{
+		max-width: 79.5%;
+	}
+	
+	#search-bar-query
+	{
+		left: 54%;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	#search-bar-container
+	{
+		max-width: 80.3%;
+	}
+	
+	#search-bar-query
+	{
+		left: 58%;
+	}
+}
+
+.container
+{
+	max-width: 1200px !important;
+	min-width: 1200px !important;
+	margin: 0 auto !important;
+}*/
