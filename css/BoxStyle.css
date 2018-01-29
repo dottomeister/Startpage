@@ -13,11 +13,10 @@
 
 .box
 {
-	margin: 5px;
 	max-width: 260px !important;
+	margin: 5px;
 	background-color: #282A36;
 }
-
 
 .box ul, .box li
 {
@@ -38,7 +37,7 @@
 
 .box-title-container
 {
-	margin: 10px 0;
+	margin: 15px 0;
 }
 
 .box-title
@@ -67,8 +66,64 @@
 	text-decoration: none;
 }
 
+.buffer-box
+{
+	margin: -1.75px;
+}
+
+#first-buffer
+{
+	margin-right: 0.1px;
+}
+#second-buffer
+{
+	margin-right: 5px;
+}
+#third-buffer {}
+
+/* Box options.
+ ------------------------- */
+
+.link-edit-button,
+.link-remove-button
+{
+	width: 20px;
+	height: 20px;
+	
+	transform: translate(25%, 20%);
+}
+
 /* Box settings.
  ------------------------- */
+
+#ettings-box-container {}
+
+.settings-box
+{
+	max-width: 260px !important;
+	height: 75px;
+	
+	margin: 5px;
+	border: 1px solid #282A36; /* REMOVE WHEN DONE */
+	
+	background: #282A36;
+}
+
+#first-settings-box
+{
+	margin-left: 0px !important;
+}
+#second-settings-box {}
+#third-settings-box
+{
+	margin-right: 0px !important;
+}
+
+.enable-setting,
+.lock-setting
+{
+	margin-top: 7.5px;
+}
 
 /* TODO */
 
@@ -86,3 +141,9 @@
 {
 	-webkit-filter: blur(5px);
 }
+
+.box-clear
+{
+	-webkit-filter: blur(0px);
+}
+

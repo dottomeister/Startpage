@@ -23,7 +23,7 @@
 		
 	</head>
 	<body>
-		<div class="full-center container">
+		<div class="full-center non-select container">
 			<div id="search-bar-container" class="box-shadow row">
 				<div id="search-bar-title" class="col-auto">
 					<span class="light-blue-text bold-text">$</span>
@@ -35,75 +35,115 @@
 			</div> <!-- search-bar-container -->
 			
 			<div id="box-container" class="row">
-				<div id="first-box" class="box box-shadow col-4">
+				
+				<div id="first-buffer" class="buffer-box hidden col-4"></div>
+				
+				<div id="first-box" class="box main-box box-clear box-shadow col-4">
 					<div class="box-title-container">
 						<span class="light-blue-text bold-text">$</span>
 						<span class="green-text bold-text">grep</span>
 						<span class="red-text bold-text hidden">"</span>
-						<input class="box-title red-text bold-text" type="text" maxlength="15" placeholder="Box Title">
+						<input class="box-title red-text bold-text" type="text" maxlength="15" >
 						<span class="red-text bold-text hidden">"</span>
 					</div> <!-- box-title-container -->
 					<div class="box-link-container">
-						<ul>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+						<ul class="box-link-list">
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
 						</ul>
 					</div> <!-- box-link-container -->
 				</div> <!-- first-box -->
 				
-				<div id="first-buffer" class="box hidden col-4"></div>
+				<div id="second-buffer" class="buffer-box hidden col-4"></div>
 				
-				<div id="second-box" class="box box-shadow col-4">
+				<div id="second-box" class="box main-box box-clear box-shadow col-4">
 					<div class="box-title-container">
 						<span class="light-blue-text bold-text">$</span>
 						<span class="green-text bold-text">grep</span>
 						<span class="red-text bold-text hidden">"</span>
-							<input class="box-title red-text bold-text" type="text" maxlength="15" placeholder="Box Title">
+						<input class="box-title red-text bold-text" type="text" maxlength="15" >
 						<span class="red-text bold-text hidden">"</span>
 					</div> <!-- box-title-container -->
 					<div class="box-link-container">
-						<ul>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+						<ul class="box-link-list">
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
 						</ul>
 					</div> <!-- box-link-container -->
 				</div> <!-- second-box -->
 				
-				<div id="second-buffer" class="box hidden col-4"></div>
+				<div id="third-buffer" class="buffer-box hidden col-4"></div>
 				
-				<div id="third-box" class="box box-shadow col-4">
+				<div id="third-box" class="box main-box box-clear box-shadow col-4">
 					<div class="box-title-container">
 						<span class="light-blue-text bold-text">$</span>
 						<span class="green-text bold-text">grep</span>
 						<span class="red-text bold-text hidden">"</span>
-						<input class="box-title red-text bold-text" type="text" maxlength="15" placeholder="Box Title">
+						<input class="box-title red-text bold-text" type="text" maxlength="15" >
 						<span class="red-text bold-text hidden">"</span>
 					</div> <!-- box-title-container -->
 					<div class="box-link-container">
-						<ul>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
-							<li><a class="link-title light-blue-text bold-text" href="" />Link name</a></li>
+						<ul class="box-link-list">
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
 						</ul>
 					</div> <!-- box-link-container -->
 				</div> <!-- third-box -->
 			</div> <!-- box-container -->
-			<input id="settings-button" class="edit-disabled" type="image" src="./resources/gear-icon.png">
+		
+			<div id="settings-box-container" class="row">
+				<div class="settings-buffer hidden col-4"></div>
+				<div id="first-settings-box" class="settings-box box-shadow hidden col-4">
+					<div class="enable-setting">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="e-button green-text bold-text">enabled</span>
+					</div>
+					<div class="lock-setting">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="l-button green-text bold-text">unlocked</span>
+					</div>
+				</div> <!-- first-settings-box -->
+				
+				<div id="second-settings-buffer" class="hidden col-4"></div>
+				<div id="second-settings-box" class="settings-box box-shadow hidden col-4">
+					<div class="enable-setting">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="e-button green-text bold-text">enabled</span>
+					</div>
+					<div class="lock-setting">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="l-button green-text bold-text">unlocked</span>
+					</div>
+				</div> <!-- second-settings-box -->
+				
+				<div class="settings-buffer hidden col-4"></div>
+				<div id="third-settings-box" class="settings-box box-shadow hidden col-4">
+					<div class="enable-setting">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="e-button green-text bold-text">enabled</span>
+					</div>
+					<div class="lock-setting">
+						<span class="light-blue-text bold-text">$</span>
+						<span class="l-button green-text bold-text">unlocked</span>
+					</div>
+				</div> <!-- third-settings-box -->
+			</div> <!-- settings-box-container -->
 		</div> <!-- full-center -->
+		
+		<input id="settings-button" class="edit-disabled" type="image" src="./resources/gear-icon.png">
 		
 		<!-- Javascript. Placed at the end so the page load faster. -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		
-		<script type="text/javascript" src="./js/SettingsScript.js"></script>
+		<script type="text/javascript" src="./js/BoxScript.js"></script>
+		<script type="text/javascript" src="./js/Script.js"></script>
 		
 		<script type="text/javascript">
-			$(document).ready(function()
-			{
-				Settings();
-			});
+			$(document).ready(function() { Script() });
 		</script>
 	</body>
 </html>
