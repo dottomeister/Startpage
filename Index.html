@@ -30,7 +30,9 @@
 					<span class="green-text bold-text">find</span>
 				</div> <!-- serach-bar-title -->
 				<div id="search-bar" class="col-10">
-					<input id="search-bar-query" type="text" autofocus="on" maxlength="72" autocomplete="on">
+					<form method="get" action="https://www.google.com/search?q=%s&pws=0&gl=us&gws_rd=cr">
+						<input id="search-bar-query" type="text" maxlength="72" autofocus="on" autocomplete="off" name="q">
+					</form>
 				</div> <!-- search-bar-query -->
 			</div> <!-- search-bar-container -->
 			
@@ -48,9 +50,18 @@
 					</div> <!-- box-title-container -->
 					<div class="box-link-container">
 						<ul class="box-link-list">
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
 						</ul>
 					</div> <!-- box-link-container -->
 				</div> <!-- first-box -->
@@ -67,9 +78,18 @@
 					</div> <!-- box-title-container -->
 					<div class="box-link-container">
 						<ul class="box-link-list">
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
 						</ul>
 					</div> <!-- box-link-container -->
 				</div> <!-- second-box -->
@@ -86,22 +106,37 @@
 					</div> <!-- box-title-container -->
 					<div class="box-link-container">
 						<ul class="box-link-list">
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
-							<li><a class="box-link light-blue-text bold-text" href="" /></a></li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
+							<li>
+								<span class="ed-button hidden light-blue-text bold-text"></span>
+								<a class="box-link light-blue-text bold-text" href="" /></a>
+							</li>
 						</ul>
 					</div> <!-- box-link-container -->
 				</div> <!-- third-box -->
 			</div> <!-- box-container -->
 		
 			<div id="settings-box-container" class="row">
+				<div id="link-settings-container" class="hidden row">
+					<div id="link-settings" class="edit-box box-shadow hidden col-12">
+						<input id="edit-link-title" class="hidden light-blue-text bold-text" type="text" maxlength="15" ><br/>
+						<input id="edit-link-url" class="hidden green-text bold-text" type="text" maxlength="60" >
+					</div>
+				</div> <!-- link-settings-container -->
+				
 				<div class="settings-buffer hidden col-4"></div>
 				<div id="first-settings-box" class="settings-box box-shadow hidden col-4">
 					<div class="enable-setting">
 						<span class="light-blue-text bold-text">$</span>
 						<span class="e-button green-text bold-text">enabled</span>
-					</div>
-					<div class="lock-setting">
+						<span style="margin-right: 26px"></span>
 						<span class="light-blue-text bold-text">$</span>
 						<span class="l-button green-text bold-text">unlocked</span>
 					</div>
@@ -112,8 +147,7 @@
 					<div class="enable-setting">
 						<span class="light-blue-text bold-text">$</span>
 						<span class="e-button green-text bold-text">enabled</span>
-					</div>
-					<div class="lock-setting">
+						<span style="margin-right: 26px"></span>
 						<span class="light-blue-text bold-text">$</span>
 						<span class="l-button green-text bold-text">unlocked</span>
 					</div>
@@ -124,14 +158,23 @@
 					<div class="enable-setting">
 						<span class="light-blue-text bold-text">$</span>
 						<span class="e-button green-text bold-text">enabled</span>
-					</div>
-					<div class="lock-setting">
+						<span style="margin-right: 26px"></span>
 						<span class="light-blue-text bold-text">$</span>
 						<span class="l-button green-text bold-text">unlocked</span>
 					</div>
 				</div> <!-- third-settings-box -->
 			</div> <!-- settings-box-container -->
+			
+			<div id="clock-container">
+				<span id="clock"></span>
+			</div>
+			
 		</div> <!-- full-center -->
+		
+		<div id="jebus-container" class="hidden">
+			<img id="jebus" src="./resources/dancingjesus.gif">
+		</div> <!-- jebus-container -->
+		
 		
 		<input id="settings-button" class="edit-disabled" type="image" src="./resources/gear-icon.png">
 		
@@ -140,10 +183,16 @@
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		
 		<script type="text/javascript" src="./js/BoxScript.js"></script>
-		<script type="text/javascript" src="./js/Script.js"></script>
+		<script type="text/javascript" src="./js/ClockScript.js"></script>
+		<script type="text/javascript" src="./js/JesusScript.js"></script>
 		
 		<script type="text/javascript">
-			$(document).ready(function() { Script() });
+			$(document).ready(function()
+			{
+				LoadBoxes();
+				LoadJesus();
+				setInterval(LoadClock(), 1000);
+			});
 		</script>
 	</body>
 </html>

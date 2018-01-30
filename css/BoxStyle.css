@@ -84,13 +84,58 @@
 /* Box options.
  ------------------------- */
 
-.link-edit-button,
-.link-remove-button
+.ed-button
 {
 	width: 20px;
 	height: 20px;
 	
 	transform: translate(25%, 20%);
+}
+
+.ed-button-hover
+{
+	color: #0056b3 !important;
+	text-decoration: none;
+}
+
+#link-settings-container
+{
+	height: 75px;
+	position: fixed;
+}
+
+#link-settings
+{
+	margin-top: 5px;
+}
+
+#edit-link-title
+{
+	width: 20%;
+}
+
+#edit-link-url
+{
+	width: 100%;
+}
+
+#edit-link-title,
+#edit-link-url
+{
+	margin-top: 7.5px;
+	border: none;
+	background: none;
+}
+
+#edit-link-title:focus,
+#edit-link-url:focus
+{
+	outline: none;
+}
+
+.edit-box
+{
+	background-color: #282A36;
 }
 
 /* Box settings.
@@ -101,7 +146,7 @@
 .settings-box
 {
 	max-width: 260px !important;
-	height: 75px;
+	height: 40px; /* 75px */
 	
 	margin: 5px;
 	border: 1px solid #282A36; /* REMOVE WHEN DONE */

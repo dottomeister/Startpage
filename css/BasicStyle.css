@@ -16,7 +16,6 @@
 	
 	position: relative;
 	
-	
 	font-family: 'Roboto Mono', monospace;
 }
 
@@ -105,9 +104,27 @@ a:visited
 /* Clock.
  ------------------------- */
 
-/* TODO */
+#clock
+{
+	margin-top: 35%;
+	left: 40%;
+	position: absolute;
+	
+	color: #fff;
+	font-size: 48px;
+	text-align: center;
 
 /* Dancing Jesus
  ------------------------- */
 
-/* TODO */
+#jebus-container
+{
+	left: 0; 
+	bottom: 20px;
+	position: absolute;
+}
+
+#jebus-container img
+{
+	height: 25%;
+}
