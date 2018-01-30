@@ -28,30 +28,17 @@ class Box
 	IsLocked() { return this.locked; }
 }
 
+var linknum = -1;
 var editmode = false;
 var linkmode = false;
 
 function
-LoadBoxes()
+LoadBoxes(dTitles, dNames, dLinks)
 {
 	var boxes = [];
 	var lastOpened;
 	
-	var dbTitles = [ "personal", "media", "work" ];
-	
-	// First box default values.
-	var dlName0 = [ "chat", "mail", "storage" ];
-	var dlURL0 = [ "https://web.whatsapp.com", "https://mail.google.com", "https://www.dropbox.com" ];
-	
-	// Second box default values.
-	var dlName1	= [ "youtube", "netflix", "soundcloud" ];
-	var dlURL1 = [ "https://www.youtube.com", "https://www.netflix.com", "https://soundcloud.com" ];
-	
-	// Third box default values.
-	var dlName2 = [ "github", "moodle", "webmail" ];
-	var dlURL2 = [ "https://github.com", "https://moodle.upm.es", "https://www.upm.es/webmail_alumnos" ];
-	
-	InitBoxes(boxes, dbTitles, [ dlName0, dlName1, dlName2 ], [ dlURL0, dlURL1, dlURL2 ]);
+	InitBoxes(boxes, dTitles, [ dlName0, dlName1, dlName2 ], [ dlURL0, dlURL1, dlURL2 ]);
 	
 	$("#settings-button").click("input", function() { ToggleEditMode(boxes) });
 	
@@ -84,29 +71,36 @@ LoadBoxes()
 			if(lastOpened == undefined) lastOpened = $(this);
 			Togglelinkmode(boxes, $(this), lastOpened, index);
 			lastOpened = $(this);
-		 });
+			linknum = index;
+		});
 	});
 	
-	$("#edit-link-title").each(function(index) { $(this).focusout(function()
+	$("#edit-link-title").focusout(function()
 	{
-		var link = boxes[Math.floor((3 * index) / 9)].GetLinks()[index % 3];
+		var value = $(this).val();
+		var box = boxes[Math.floor((3 * linknum) / 9)];
+		var link = box.GetLinks()[linknum % 3];
+		
 		link.SetName($(this).val());
 		
-		UpdateLink(boxes, $(this), index);
+		$(".ed-button").each(function(index) { if(linknum == index)$(this).text(link.GetName()) });
+		$(".box-link").each(function(index) { if(linknum == index)$(this).text(link.GetName()) });
 		
-		$(".ed-button").each(function(subindex) { if(index == subindex)$(this).text(link.GetName()) });
-		$(".box-link").each(function(subindex) { if(index == subindex)$(this).text(link.GetName()) });
-	})});
+		UpdateLink(boxes, $(this), linknum);
+	});
 	
 	$("#edit-link-url").each(function(index) { $(this).focusout(function()
 	{
-		var link = boxes[Math.floor((3 * index) / 9)].GetLinks()[index % 3];
+		var value = $(this).val();
+		var box = boxes[Math.floor((3 * linknum) / 9)];
+		var link = box.GetLinks()[linknum % 3];
+		
 		link.SetURL($(this).val());
 		
-		UpdateLink(boxes, $(this), index);
+		$(".box-link").each(function(index) { if(linknum == index) $(this).attr("href", link.GetURL()) });
 		
-		$(".box-link").each(function(subindex) { if(index == subindex) $(this).attr("href", link.GetURL()) });
-	})});
+		UpdateLink(boxes, $(this), linknum);
+	}) });
 }
 
 /**

@@ -182,6 +182,7 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		
+		<script type="text/javascript" src="./js/Default.js"></script>
 		<script type="text/javascript" src="./js/BoxScript.js"></script>
 		<script type="text/javascript" src="./js/ClockScript.js"></script>
 		<script type="text/javascript" src="./js/JesusScript.js"></script>
@@ -189,7 +190,7 @@
 		<script type="text/javascript">
 			$(document).ready(function()
 			{
-				LoadBoxes();
+				LoadBoxes(dTitles, [dlName0, dlName1, dlName2], [dlURL0, dlURL1, dlURL2]);
 				LoadJesus();
 				setInterval(LoadClock(), 1000);
 			});
