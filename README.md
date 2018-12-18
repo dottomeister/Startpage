@@ -2,7 +2,7 @@
 <h1 align="center">Fixxe's Startpage</h1> 
 
 <p align="center">
-	<img src="https://img.shields.io/badge/Version-1.0-green.svg" alt="Version">
+	<img src="https://img.shields.io/badge/Version-3.0-green.svg" alt="Version">
 	<img src="https://img.shields.io/badge/Updated-January%202018-yellowgreen.svg" alt="Updated">
 </p>
 
