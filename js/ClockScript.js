@@ -4,6 +4,8 @@ var analog = true;
 function
 LoadClock()
 {
+	console.log("Loading");
+	
 	var ampm = "am";
 	var date = new Date();
 	var hour = date.getHours();

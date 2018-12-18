@@ -10,5 +10,5 @@ var dlName1	= [ "youtube", "netflix", "soundcloud" ];
 var dlURL1 = [ "https://www.youtube.com", "https://www.netflix.com", "https://soundcloud.com" ];
 
 // Third box default values.
-var dlName2 = [ "github", "moodle", "webmail" ];
+var dlName2 = [ "github", "moodle", "upm mail" ];
 var dlURL2 = [ "https://github.com", "https://moodle.upm.es", "https://www.upm.es/webmail_alumnos" ];
